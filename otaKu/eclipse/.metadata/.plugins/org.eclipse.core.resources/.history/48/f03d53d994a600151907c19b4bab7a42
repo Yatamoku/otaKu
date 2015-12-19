@@ -1,0 +1,13 @@
+package me.yata.otaKu.modules;
+
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+public class GUI extends Module{
+
+	public GUI() {
+		super("GUI", Keyboard.KEY_INSERT, Category.GUI);
+		// TODO Auto-generated constructor stub
+	}
+
+}

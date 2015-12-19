@@ -1,0 +1,25 @@
+package me.yata.otaKu.modules;
+
+import org.lwjgl.input.Keyboard;
+
+import me.yata.otaKu.otaKu;
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+import me.yata.otaKu.utils.Wrapper;
+
+public class GUI extends Module{
+
+	public GUI() {
+		
+		super("GUI", Keyboard.KEY_INSERT, Category.GUI);
+		
+
+	}
+	
+	public void onToggle() {
+		
+		Wrapper.mc.displayGuiScreen(otaKu.theClient.getGui());
+		
+	}
+
+}

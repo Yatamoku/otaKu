@@ -1,0 +1,16 @@
+package me.yata.otaKu.module;
+
+public class GetAsyncKeyState {
+
+    static {
+    	
+        System.loadLibrary("SS");
+        
+    }
+    
+    public GetAsyncKeyState(int virtualKeyCode) {
+    	
+    }
+
+	
+}

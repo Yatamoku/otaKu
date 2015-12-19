@@ -1,0 +1,14 @@
+package me.yata.otaKu.ui;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiIngame;
+
+public class GuiInGameHook extends GuiIngame {
+
+	public GuiInGameHook(Minecraft mcIn) {
+		
+		super(mcIn);
+		
+	}
+	
+}

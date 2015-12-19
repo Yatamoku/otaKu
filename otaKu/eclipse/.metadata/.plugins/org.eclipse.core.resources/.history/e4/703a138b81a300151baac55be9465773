@@ -1,0 +1,19 @@
+package me.yata.otaKu.module;
+
+import java.util.ArrayList;
+
+import me.yata.otaKu.modules.*;
+
+public class ModuleManager {
+	
+	public static ArrayList<Module> activeModules = new ArrayList<Module>();
+	
+	public ModuleManager() {
+		
+		this.activeModules.add(new Sprint());
+		this.activeModules.add(new FullBright());
+		
+	}
+	
+
+}

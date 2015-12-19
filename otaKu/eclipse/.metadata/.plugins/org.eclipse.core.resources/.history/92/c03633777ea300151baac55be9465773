@@ -1,0 +1,63 @@
+/* package me.yata.otaKu.modules;
+
+import java.util.List;
+
+import net.java.games.input.Keyboard;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.Entity;
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+public class KillAura extends Module {
+
+	public KillAura() {
+		
+		super("|Kill Aura|", Keyboard.KEY_P, Category.COMBAT);
+		
+	}
+	
+	public void onUpdate() {
+		
+		if(this.getState())
+			this.killaura();
+		
+	}
+	
+	
+	
+//TODO: Improved kill aura.
+	
+	int delay;
+	
+	private void killaura() {
+
+		List list = mc.theWorld.playerEntities;
+		delay++;
+		
+		for(int i = 0; i < list.size(); i++ ) {
+		
+			if(((EntityPlayer)list.get(i)).getName() == mc.thePlayer.getName()) {
+			
+				continue;
+				
+			}
+			
+			EntityPlayer entityPlayer = (EntityPlayer)list.get(1);
+			
+			if(mc.thePlayer.getDistanceToEntity(entityPlayer) > mc.thePlayer.getDistanceToEntity((Entity)list.get(i))) {
+				
+				entityPlayer = (EntityPlayer)list.get(i);
+				
+			}
+			
+			float f = mc.thePlayer.getDistanceToEntity(entityPlayer);
+			
+			if(f < 4f && mc.thePlayer.canEntityBeSeen(entityPlayer) && delay > 8) {
+				
+				this.faceEntity(entityPlayer);
+				
+			}
+		}
+	}
+
+}

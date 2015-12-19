@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.FontRenderer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiIngame"/>
+<fullyQualifiedTypeName name="com.google.common.base.Equivalence.Wrapper"/>
+<fullyQualifiedTypeName name="java.sql.Wrapper"/>
+<fullyQualifiedTypeName name="me.yata.otaKu.ui.GuiInGameHook"/>
+<fullyQualifiedTypeName name="me.yata.otaKu.modules.Sprint"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.java.games.input.Keyboard"/>
+<fullyQualifiedTypeName name="me.yata.otaKu.module.Module"/>
+<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+<fullyQualifiedTypeName name="me.yata.otaKu.otaKu"/>
+<fullyQualifiedTypeName name="me.yata.otaKu.utils.Wrapper"/>
+<fullyQualifiedTypeName name="org.darkstorm.minecraft.gui.AbstractGuiManager"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="me.yata.otaKu.module.ModuleManager"/>
+<fullyQualifiedTypeName name="org.darkstorm.minecraft.gui.layout.GridLayoutManager"/>
+<fullyQualifiedTypeName name="org.darkstorm.minecraft.gui.layout.GridLayoutManager.HorizontalGridConstraint"/>
+<fullyQualifiedTypeName name="org.darkstorm.minecraft.gui.util.GuiManagerDisplayScreen"/>
+<fullyQualifiedTypeName name="me.yata.otaKu.managers.GuiManager"/>
+<fullyQualifiedTypeName name="org.darkstorm.minecraft.gui.theme.simple.SimpleTheme"/>
+<fullyQualifiedTypeName name="me.yata.otaKu.module.Category"/>
+</qualifiedTypeNameHistroy>

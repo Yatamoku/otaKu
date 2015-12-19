@@ -1,0 +1,34 @@
+package me.yata.otaKu.modules;
+
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+import org.lwjgl.input.Keyboard;
+
+public class FastPlace extends Module {
+
+	public FastPlace() {
+		
+		super("Fast lace", Keyboard.KEY_C, Category.PLAYER);
+		
+	}
+	
+	public void onUpdate() {
+		
+		if(this.getState()) {
+			
+			mc.rightClickDelayTimer = 0;
+			
+		}
+		
+	}
+	
+	public void onDisable() {
+		
+		mc.rightClickDelayTimer = 6;
+		
+	}
+	
+	
+
+}

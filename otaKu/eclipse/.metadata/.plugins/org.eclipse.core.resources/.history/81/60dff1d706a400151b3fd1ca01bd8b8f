@@ -1,0 +1,18 @@
+package me.yata.otaKu.modules;
+
+import org.lwjgl.input.Keyboard;
+
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+public class FastPlace extends Module {
+
+	public FastPlace() {
+		
+		super("Fast lace", Keyboard.KEY_C, Category.PLAYER);
+		
+	}
+	
+	
+
+}

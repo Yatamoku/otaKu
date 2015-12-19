@@ -1,0 +1,47 @@
+package me.yata.otaKu.ui;
+
+
+
+import me.yata.otaKu.otaKu;
+import me.yata.otaKu.module.Module;
+import me.yata.otaKu.utils.Wrapper;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiIngame;
+
+public class GuiInGameHook extends GuiIngame {
+
+	public GuiInGameHook(Minecraft mcIn) {
+		
+		super(mcIn);
+		
+	}
+	
+	public void func_175180_a(float p_175180_1_) {
+		
+		super.func_175180_a(p_175180_1_);
+		
+		Wrapper.fr.drawString(otaKu.getClient_Name() + " Release: " + otaKu.getClient_Version(), 170, 1, 0xffffffff);
+		renderArrayList();
+		otaKu.theClient.getGuiManager().renderPinned();
+		
+	}
+
+	private void renderArrayList() {
+		int yCount = 10;
+		for(Module m : otaKu.theClient.moduleManager.activeModules) {
+			
+			m.onRender();
+			
+			if(m.getState()) {
+				
+				Wrapper.fr.drawString(m.getName(), 370, yCount, 0x00ff7f);
+				yCount += 10;
+				
+				
+			}
+			
+		}
+		
+	}
+	
+}

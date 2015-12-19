@@ -1,0 +1,16 @@
+package me.yata.otaKu.module;
+
+import java.util.ArrayList;
+
+public class ModuleManager {
+	
+	public static ArrayList<Module> activeModules = new ArrayList<Module>();
+	
+	public ModuleManager() {
+		
+		
+		
+	}
+	
+
+}

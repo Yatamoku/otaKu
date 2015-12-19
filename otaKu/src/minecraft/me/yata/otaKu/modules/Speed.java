@@ -1,0 +1,32 @@
+package me.yata.otaKu.modules;
+
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+import org.lwjgl.input.Keyboard;
+
+public class Speed extends Module{
+
+	public Speed() {
+		
+		super("Speed Hack", Keyboard.KEY_G, Category.PLAYER);
+
+	}
+	
+	public void onUpdate() {
+		
+		if(this.getState()) {
+			
+			mc.thePlayer.setVelocity(3, 3, 3);
+			
+		}
+		
+	}
+	
+	public void onDisable() {
+		
+		mc.thePlayer.setVelocity(1, 1, 1);
+		
+	}
+
+}

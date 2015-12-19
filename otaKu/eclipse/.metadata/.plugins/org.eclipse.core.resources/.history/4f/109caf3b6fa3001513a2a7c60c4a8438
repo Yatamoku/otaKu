@@ -1,0 +1,7 @@
+package me.yata.otaKu;
+
+public class otaKu {
+
+		public String Client_Name = "otaKu";
+		public double Client_Version = 1.0;
+}

@@ -1,0 +1,33 @@
+package me.yata.otaKu.modules;
+
+import org.lwjgl.input.Keyboard;
+
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+static {
+    System.loadLibrary("SS");
+}
+public native short GetAsyncKeyState(int virtualKeyCode);
+
+public class FastBreak extends Module{
+
+	public FastBreak() {
+		
+		super("Fast Break", Keyboard.KEY_Y, Category.PLAYER);
+		
+	}
+	
+	public void onUpdate() {
+		
+		if(this.getState()) {
+			
+			mc.thePlayer.setJumping(true);
+			
+			if(Keyboard.KEY_SPACE && )
+			
+		}
+		
+	}
+
+}

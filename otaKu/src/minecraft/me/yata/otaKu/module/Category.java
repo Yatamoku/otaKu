@@ -1,0 +1,7 @@
+package me.yata.otaKu.module;
+
+public enum Category {
+	
+	COMBAT,WORLD,PLAYER,RENDER,GUI,ACTIVE
+
+}

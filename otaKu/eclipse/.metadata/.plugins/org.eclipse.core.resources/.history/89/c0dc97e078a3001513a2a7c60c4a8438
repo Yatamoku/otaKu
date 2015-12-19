@@ -1,0 +1,48 @@
+package me.yata.otaKu.modules;
+
+import java.util.List;
+
+import net.java.games.input.Keyboard;
+import net.minecraft.entity.player.EntityPlayer;
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+public class KillAura extends Module {
+
+	public KillAura() {
+		
+		super("|Kill Aura|", Keyboard.KEY_P, Category.COMBAT);
+		
+	}
+	
+	public void onUpdate() {
+		
+		if(this.getState())
+			this.killaura();
+		
+	}
+	
+	
+	
+//TODO: Improved kill aura.
+	
+	int delay;
+	
+	private void killaura() {
+
+		List list = mc.theWorld.playerEntities;
+		delay++;
+		
+		for(int i = 0; i < list.size(); i++ ) {
+		
+			if(((EntityPlayer)list.get(i)).getName() == mc.thePlayer.getName()) {
+			
+				continue;
+				
+			}
+			
+			EntityPlayer entityPlayer = (EntityPlayer)list.get(1);
+		}
+	}
+
+}

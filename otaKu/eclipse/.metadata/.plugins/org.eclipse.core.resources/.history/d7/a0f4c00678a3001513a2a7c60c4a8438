@@ -1,0 +1,33 @@
+package me.yata.otaKu.modules;
+
+import net.java.games.input.Keyboard;
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+public class KillAura extends Module {
+
+	public KillAura() {
+		
+		super("|Kill Aura|", Keyboard.KEY_P, Category.COMBAT);
+		
+	}
+	
+	public void onUpdate() {
+		
+		if(this.getState())
+			this.killaura();
+		
+	}
+	
+	
+	
+//TODO: Improved kill aura.
+	
+	int delay;
+	
+	private void killaura() {
+
+		
+	}
+
+}

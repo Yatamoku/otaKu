@@ -1,0 +1,13 @@
+package me.yata.otaKu.modules;
+
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+public class KillAura extends Module {
+
+	public KillAura()) {
+		super(name, bind, category);
+		// TODO Auto-generated constructor stub
+	}
+
+}

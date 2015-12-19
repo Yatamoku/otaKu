@@ -1,0 +1,13 @@
+package ui;
+
+import net.minecraft.client.Minecraft;
+
+public class GuiInGame {
+
+	public GuiInGame(Minecraft mcIn) {
+		
+		super(mcIn);
+		
+	}
+	
+}

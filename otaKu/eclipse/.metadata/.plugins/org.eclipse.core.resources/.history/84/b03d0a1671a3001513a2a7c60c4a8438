@@ -1,0 +1,7 @@
+package me.yata.otaKu.module;
+
+public class ModuleManager {
+	
+	public static ArrayList<Module> activeModules = new ArrayKust<Module>();
+
+}

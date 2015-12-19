@@ -1,0 +1,15 @@
+package me.yata.otaKu.modules;
+
+import org.lwjgl.input.Keyboard;
+
+import me.yata.otaKu.module.Category;
+import me.yata.otaKu.module.Module;
+
+public class Fly extends Module {
+
+	public Fly() {
+		super("Fly", Keyboard.KEY_F, Category.PLAYER);
+		// TODO Auto-generated constructor stub
+	}
+
+}
